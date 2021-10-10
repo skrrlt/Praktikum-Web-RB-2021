@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> MELIGHTOGRAPHY </title>
+
+        <style>
+            
+            body{
+                font-family: 'Trebuchet MS', sans-serif; 
+                letter-spacing: 5px;
+            }
+
+            .title{
+                font-size: 22px;
+                color: black;
+                text-align: center;
+                margin-top: 5px;  
+                margin-bottom: 5px; 
+            }
+
+            hr{
+                border: 2px solid black;
+            }
+
+            @keyframes slidy {
+                0% { left: 0%; }
+                15% { left: -50%; }
+                35% { left: -100%; }
+                55% { left: -150%; }
+                75% { left: -200%; }
+                85% { left: -250%; }
+                100% { left: -300%; }
+                100% { left: -250%; }
+            }
+
+            div#slider { 
+                overflow: hidden; 
+            }
+
+            div#slider figure img { 
+                width: 10%; 
+                float: left; 
+            }
+
+            div#slider figure { 
+                position: relative;
+                width: 500%;
+                text-align: left;
+                animation: 15s slidy infinite;
+                margin: 2px; 
+            }
+
+            nav{
+                margin: auto;
+                letter-spacing: 5px;
+                float: none;
+            }
+
+            nav a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                float: left;
+            }
+
+            nav a:hover{
+                background-color: #ccc;
+                color: black;
+            }
+
+            ul {
+                list-style-type: none;
+                margin-top: 10px;
+                margin-bottom: 10px; 
+                margin-left: auto;
+                padding: 0;
+                overflow: hidden;
+                top: 20px;
+                width: 100%;
+                background-color: black;
+            }
+
+            .gallery, .contact, .about, .form{
+                margin: 2%;
+                letter-spacing: 1px;
+                line-height: 10px;
+            }
+
+            .gallery {
+                float: left;
+                text-align: center;
+            }
+
+            .photos {
+                border: 2px solid #ccc;
+                float: left;
+                width: 585px;
+                margin-bottom: 10px;
+                margin-right: 9px;
+            }
+
+            .photos img {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+
+            h4, h5{
+                margin-top: 20px;
+                font-size: 18px;
+            }
+
+            p{
+                font-size: 12px;
+            }
+
+            input{
+                display: inline-block;
+                box-sizing: border-box;
+                width: 390px;
+                text-align: left;
+                padding:5px;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                font-size: 10px;
+            }
+
+            input[type=submit]{
+                width: 100px;
+                text-align: center;
+                padding:5px;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                font-size: 10px;
+            }
+
+            input[type=submit]:hover{
+                background-color: white;
+            }
+
+            footer{
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 30px 10px;
+                margin: auto;
+            }            
+           
+            a.button {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                background-color: white;
+                text-decoration: none;
+                width: 150px;
+                padding:8px;
+                border-radius: 5px;
+                color: black;
+                text-align: center;
+                letter-spacing: 1px;
+                font-size: 12px;
+            }
+
+            a.button:hover {
+                background-color: #ccc;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+            <header>
+                <div class="title">
+                    <h1> <b> MELIGHTOGRAPHY </b> </h1> 
+                    <hr> 
+                </div>
+                
+                <div id="slider">
+                    <figure>
+                        <img src="a.jpg">
+                        <img src="b.jpg">
+                        <img src="c.jpg">
+                        <img src="d.jpg">
+                        <img src="e.jpg">
+                        <img src="f.jpg">
+                        <img src="a.jpg">
+                    </figure>
+                </div>          
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a class="#" href="#">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+
+
+            <content>
+
+                <div class="gallery" id="gallery">
+                    <h4><b>Melightography Gallery</b></h4>
+                    
+                    <div class="photos">
+                        <p> for product Aquaplus</p>
+                        <img src="product.jpg" alt="product" >
+                    </div>
+
+                    <div class="photos">
+                        <p> maternity photoshoots</p>
+                        <img src="maternity.jpg" alt="maternity" >
+                    </div>
+
+                    <div class="photos" >
+                        <p> event for <i> Hanggini's </i> mini showcase </p>
+                        <img src="event.jpg" alt="event" >
+                    </div>
+
+                    <div class="photos">
+                        <p> food photoshoot for Bakmi Obeng, Bandung</p>
+                        <img src="foods.jpg" alt="foods" >
+                    </div>
+
+                    <div class="photos">
+                        <p> personal photoshoot Sarwendah (@<a href="https://www.instagram.com/sarwendah29/">sarwendah29</a>)</p>
+                        <img src="personal.jpg" alt="personal" >
+                    </div>
+                </div>
+                
+                <div class="contact" id="contact">
+                    <h4>Contact</h4>
+                        <p> instagram @<a href="https://www.instagram.com/melightography/">melightography</a></p>
+                        <p> for further information contact us on <a href="https://wa.me/6287776501055/"> wa.me/6287776501055 </a> </p> 
+                        <br> 
+                </div>
+
+                <div class="about" id="about">
+                    <h4>About</h4>
+                        <p> melightography</p>
+                        <p> light every moment </p>
+                        <p> Serving you with any kinds of photoshoots or be there at your event.</p>
+                        <p> Ready to capture your moments whether you are in Bali, Jakarta, </p>
+                        <p> or take us anywhere.</p>  
+                        <br>  
+                </div>
+
+                <div class="form">
+                    <form method="GET" >
+                        <p> <b> enter your email for any information about discount! </b></p>
+                        <input type="email" name="email" placeholder="example@gmail.com">
+                        <input  type="submit" value="Submit">
+                    <br>
+                    </form>  
+                </div>
+
+            </content>
+            
+            <footer> 
+                <br>
+                <a href="#" class="button"> back to the top  </a>
+                <br> <br> <br>
+                <p> Copyright &copy;melightography design by sekar alit</p> 
+            </footer>         
+
+    </body>
+ 
+</html>
+
+
