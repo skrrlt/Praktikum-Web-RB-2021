@@ -1,0 +1,116 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: black;
+    margin: 5px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    font-size: 12px;
+    color: black;
+    float: none;
+}
+
+.header img{
+    height: 55px;
+    margin-right: 10px;
+    float: left;
+}
+
+.nav{
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    float: none;
+    letter-spacing: 3px;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.nav a:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+}
+
+.maincontent{
+    float: left;
+    background-color:white;
+    padding-left: 13px;
+    padding-top: 13px;
+    width:66%;
+    height: fit-content;
+    font-size: 80%;
+    text-align: justify;
+}
+
+.maincontent img {
+    width: 134px;
+    float: left;
+    padding-right: 10px;
+}
+
+.biodata{
+    margin-bottom: 100px;
+}
+
+.contact img{
+    width: 20px;
+}
+
+.news{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 0px;
+    float: right;
+    background-color:whitesmoke;
+    font-size: 12px;
+    width:29.3%;
+    height: fit-content;
+}
+
+.news h3{
+    text-align: center;
+}
+
+.news ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+.news li:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.footer{
+    float: none;
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 10px;
+}
