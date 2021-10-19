@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+
+    <body id="body">
+
+        <script>
+            var name = prompt("Who are you?");
+            document.write("<p> Hi, " + name +  "! </p>");
+        </script>
+    
+        <div class="themes">
+            <label for=themes>Select theme : </label>
+            <select name="themes" id="themes" onchange="theme()">
+                <option value=""></option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
+                <option value="pink">pink</option>
+                <option value="white">white</option>
+            </select>
+    
+            <script>
+                function theme(){
+                    var color = document.getElementById("themes");       
+                    if (color.value == "black"){
+                        document.body.style.backgroundColor = "Black";
+                        document.getElementById("body").style.color = "White";
+                    }else if(color.value == "blue"){
+                        document.body.style.backgroundColor = "LightSteelBlue";
+                        document.getElementById("body").style.color = "MidnightBlue";
+                    }else if(color.value == "pink"){
+                        document.body.style.backgroundColor = "LavenderBlush";
+                        document.getElementById("body").style.color = "MediumVioletRed";
+                    }else if(color.value == "white"){
+                        document.body.style.backgroundColor = "White";
+                        document.getElementById("body").style.color = "Black";
+                    }
+                }
+            </script>    
+        </div>
+
+        <br>
+        <h1> This is my website </h1>
+        <br>
+
+        <div class="percabangan">
+            <label> How's your day?</label>
+            <select class="today" id="today" onchange="feelin()">
+                <option value=""></option>
+                <option value="good">good</option>
+                <option value="nottoobad">not too bad</option>
+                <option value="sobad">so bad</option>
+            </select>
+
+            <p id="notes"> </p>
+            <script>
+                function feelin(){
+                    var note = document.getElementById("notes");
+                    switch(today.value){
+                        case "good":
+                            note.innerText="Happy for you!";
+                            break
+                        case "nottoobad":
+                            note.innerText="Thank you for doing your best!";
+                            break
+                        case "sobad":
+                            note.innerText="Take a bath and go to sleep, hope you feel better asap, " +name+ "!";
+                            break
+                    }
+                }
+            </script>
+        </div>
+
+        <div class="perulangan"> 
+            <form>
+                <label>Input number : </label>
+                <input id="inputnumber" type="text">
+                <input type="button" value="Get Factorial" onclick="factorial()">
+            </form>
+
+            <p id="result"></p>
+    
+            <script>
+                function factorial(){
+                    var x = document.getElementById("inputnumber").value;
+                    var result = document.getElementById("result");
+                    var i=1;
+                    var factor=1;
+                    while(i<=x){
+                        factor=factor*i;
+                        i++;
+                    }
+                    result.innerText = "The factorial of " + x + " is " + factor;
+                }
+            </script>
+        </div>
+
+    </body>
+</html>
